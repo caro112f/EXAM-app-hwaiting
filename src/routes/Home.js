@@ -23,29 +23,29 @@ export default function Home() {
     /*      const aButton = artistButtonRef.current;
      const pButton = programButtonRef.current;
      const bButton = buyButtonRef.current; */
-    tl.from(heading, { opacity: 0 });
-    tl.to(heading, { duration: 0.5, opacity: 1 });
+    //tl.from(heading, { opacity: 0 });
+    tl.to(heading, { duration: 1, opacity: 1 });
     tl.to(heading, {
       duration: 0.5,
       textShadow: "0px 0px 18px #aa53ff",
     });
     tl.to(heading, {
-      duration: 0.15,
+      duration: 0.2,
       textShadow: "0px 0px 0px #aa53ff",
     });
     tl.to(heading, {
-      duration: 0.15,
+      duration: 0.2,
       textShadow: "0px 0px 18px #aa53ff",
     });
     tl.to(heading, {
-      duration: 0.15,
+      duration: 0.2,
       textShadow: "0px 0px 0px #aa53ff",
     });
     tl.to(heading, {
-      duration: 0.1,
+      duration: 0.2,
       textShadow: "0px 0px 18px #aa53ff",
     });
-    tl.to(buttons, { duration: 0.1, opacity: 0, delay: 0.2 });
+    //tl.to(buttons, { duration: 0.1, opacity: 0, delay: 0.2 });
     tl.to(buttons, { duration: 0.6, opacity: 1 });
     // tl.to(aButton, {
     //   duration: 0.2,
@@ -105,7 +105,7 @@ export default function Home() {
               ref={buyButtonRef}
               id="buy-button"
               className="landing-button"
-              href="https://book-hwaiting.detblaarum.dk/"
+              href="https://exam-booking-hwaiting.detblaarum.dk/"
               target="_blank"
               rel="noreferrer"
             >
