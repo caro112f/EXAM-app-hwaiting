@@ -20,21 +20,30 @@ export default function SingleArtist({
   });
 
   let memberList = [];
+
+  //we replace the "+" in the bandname with a space again, so we can compare the names
   const originalName = bandName.replace(/\+/g, " ");
   //let { name, members, genre, logoCredits, logo, bio   = artistInfo[0];}
+
   let artistSchedule = schedule.filter((a) => a.act === originalName);
+
+  //her sammenligner vi artist name fra artists array med vores originalname
   let artistInfo = artists.filter((artist) => artist.name === originalName);
 
+  //hvis arrayet et tomt skal der vises loading symbol
   if (artistInfo.length === 0) {
     return (
-      <div className="sv-heart-ld">
-        <div className="lds-heart">
-          <div></div>
+      <div id="single-wrapper">
+        <div className="sv-heart-ld">
+          <div className="lds-heart">
+            <div></div>
+          </div>
         </div>
       </div>
     );
   }
 
+  //her lytter den efter om valgte artist er sat til favorit eller ej
   function checkFaves() {
     let alreadyFav = fav.filter((a) => a.act === artistInfo[0].name);
     if (alreadyFav.length !== 0) {
@@ -46,6 +55,7 @@ export default function SingleArtist({
     memberList.push(<h3 key={m}>{m}</h3>);
   });
 
+  //her cleaner vi så man i displayet ser "monday" og ikke "mon"
   function getPrettyDay() {
     if (artistSchedule[0].day === "mon") {
       return "Monday";
@@ -164,7 +174,7 @@ export default function SingleArtist({
                 id="faved-button"
               >
                 <img id="faved-icon" src={faved} alt="favourite-icon" />
-                Remove from schedule
+                Remove from favourites
               </button>
             ) : (
               <button
@@ -177,7 +187,7 @@ export default function SingleArtist({
                   src={isLoggedIn ? activeFav : unactiveFav}
                   alt="favourite-icon"
                 />
-                {isLoggedIn ? "Add to schedule" : "Login to favourite"}
+                {isLoggedIn ? "Add to favourites" : "Login to favourite"}
               </button>
             )}
 

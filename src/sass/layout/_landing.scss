@@ -12,26 +12,30 @@ body {
 #header-landing {
   background-size: cover;
   background-position: 52% 10%;
-  height: 110vh;
+  height: 100vh;
   width: 100vw;
   display: grid;
   align-content: center;
   justify-content: center;
-  margin-top: -5rem;
+  //margin-top: -5rem;
+}
+#home-p {
+  text-align: center;
 }
 
 #landing-buttons {
-  margin-top: 1rem;
+  margin-top: 4.5rem;
   position: relative;
   z-index: 3;
   display: flex;
   justify-content: center;
   gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .landing-button {
   background-color: vars.$background-blue;
-  border-radius: 2px;
+  border-radius: 5px;
   padding-block: 0.8rem;
   padding-inline: 1.2rem;
   cursor: pointer;
@@ -42,9 +46,18 @@ body {
   transition: 0.3s ease-in-out;
 
   &:hover {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
   }
+}
+#arrowdown {
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: -90px;
+  font-size: 2rem;
 }
 
 #artist-button {
@@ -59,5 +72,93 @@ body {
 
   &:hover {
     box-shadow: 0px 0px 22px vars.$lightneonpink;
+  }
+}
+#buy-button {
+  @include mixins.green-button;
+
+  &:hover {
+    box-shadow: 0px 0px 22px vars.$lightneongreen;
+  }
+}
+#home-divider {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  //box-shadow: 0px 0px 8px white;
+}
+#highlight-section {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1000px) auto;
+  place-content: center;
+  margin-top: 3rem;
+  #landing-h2 {
+    grid-column: 2/3;
+    grid-row: 1;
+    text-align: center;
+    margin-block: 1rem 5rem;
+  }
+  #big {
+    font-size: 150%;
+  }
+  hr {
+    grid-column: 2/3;
+    grid-row: 3;
+    text-align: center;
+    width: 30%;
+    margin-inline: auto;
+    margin-top: 1rem;
+  }
+  #landing-h3 {
+    grid-column: 2/3;
+    grid-row: 2;
+    text-align: center;
+    color: white;
+    margin-top: 3rem;
+  }
+}
+.picture-wrapper {
+  grid-column: 2/3;
+  grid-row: 4;
+  place-content: center;
+  align-items: center;
+  padding: 1rem 0rem 4rem 0rem;
+  @include mixins.bp-medium {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 1rem;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+  #girl-img {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  #glowsticks-img {
+    display: grid;
+    grid-column: 2/4;
+    grid-row: 1/3;
+  }
+  #boy-img {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  #koncert-img {
+    display: grid;
+    grid-column: 1/3;
+    grid-row: 3/5;
+  }
+  #foodtruck-img {
+    display: grid;
+    grid-column: 3/4;
+    grid-row: 3/5;
   }
 }

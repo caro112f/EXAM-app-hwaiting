@@ -40,6 +40,7 @@ export default function Header({ isLoggedIn, setIsLoggedIn, setFav }) {
               src={logo}
               alt="Logo"
             />
+            <p>8/8-14/8</p>
           </Link>
           <div id="nav-web-right">
             <ul

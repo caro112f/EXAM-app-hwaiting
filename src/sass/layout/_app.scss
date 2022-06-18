@@ -1,6 +1,12 @@
 @use "../abstracts/vars";
 @use "../abstracts/mixins";
-
+#app-main {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
 #header-logos-grid {
   display: grid;
   grid-template-columns: 47vw 54vw;
@@ -18,13 +24,17 @@
   justify-content: space-between;
   display: flex;
 }
-
+#home-logo-container {
+  display: flex;
+  gap: 1rem;
+}
 #home-logo {
   height: auto;
   width: 2.5rem;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   &:hover {
+    transform: scale(1.06);
     box-shadow: 0px 0px 22px vars.$lightneonblue;
   }
 }
@@ -105,8 +115,8 @@
 }
 
 .navbar {
-  background-color: vars.$background-blue;
-  padding: 1.5rem 2rem 1rem 2rem;
+  background-color: rgba(0, 0, 139, 0);
+  padding: 2rem 2rem 2rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;

@@ -39,3 +39,7 @@
   border: 3px solid vars.$neonpink;
   //box-shadow: 0px 0px 8px vars.$lightneonpink;
 }
+@mixin green-button {
+  border: 3px solid vars.$neongreen;
+  //box-shadow: 0px 0px 8px vars.$lightneonpink;
+}

@@ -20,24 +20,26 @@ function Artists(props) {
           <h1>Artists</h1>
           <img id="artists-header-img" src={vinylImg} alt="Vinyl"></img>
         </header>
-        <FilterOptions
-          setDayFilter={setDayFilter}
-          setGenreFilter={setGenreFilter}
-          genreFilter={genreFilter}
-          setSearchInput={setSearchInput}
-          setSortDir={setSortDir}
-          sortDir={sortDir}
-        ></FilterOptions>
-        <ArtistList
-          schedule={props.schedule}
-          artists={props.artists}
-          dayFilter={dayFilter}
-          genreFilter={genreFilter}
-          searchInput={searchInput}
-          sort={sort}
-          setSort={setSort}
-          sortDir={sortDir}
-        ></ArtistList>
+        <section id="artistlist-wrapper">
+          <FilterOptions
+            setDayFilter={setDayFilter}
+            setGenreFilter={setGenreFilter}
+            genreFilter={genreFilter}
+            setSearchInput={setSearchInput}
+            setSortDir={setSortDir}
+            sortDir={sortDir}
+          ></FilterOptions>
+          <ArtistList
+            schedule={props.schedule}
+            artists={props.artists}
+            dayFilter={dayFilter}
+            genreFilter={genreFilter}
+            searchInput={searchInput}
+            sort={sort}
+            setSort={setSort}
+            sortDir={sortDir}
+          ></ArtistList>
+        </section>
       </main>
       <Footer></Footer>
     </>

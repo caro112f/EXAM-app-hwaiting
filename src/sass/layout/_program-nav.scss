@@ -5,7 +5,9 @@
   position: sticky;
   top: 0;
   left: 0;
-  border: 1px solid vars.$white;
+  border-top: 1px solid vars.$white;
+  border-bottom: 1px solid vars.$white;
+  grid-column: 1 / 4;
 }
 
 #program-nav-container {

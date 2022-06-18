@@ -1,13 +1,20 @@
 @use "../abstracts/vars";
 @use "../abstracts/mixins";
 
+#program-main {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1000px) auto;
+  grid-template-rows: auto;
+}
+
 #program-header {
   margin-block: 4rem;
   display: flex;
   gap: 2rem;
   align-items: center;
   justify-content: center;
-
+  grid-column: 2/3;
+  grid-row: 1;
   @include mixins.bp-medium {
     margin-block: 6rem;
   }
@@ -16,7 +23,9 @@
 #program-header-img {
   max-width: 7rem;
 }
-
+#program-wrapper {
+  grid-column: 2/3;
+}
 .day-section {
   margin-block: 8rem 8rem;
   text-align: center;
@@ -87,8 +96,8 @@
 
 .monday-section {
   color: vars.$neonpink;
-  border: 10px solid vars.$neonpink;
-  box-shadow: 0px 0px 6px 2px vars.$lightneonpink;
+  border: 5px solid vars.$neonpink;
+  box-shadow: 0px 0px 8px 2px vars.$lightneonpink;
 
   hr {
     color: vars.$neonpink;
@@ -132,8 +141,8 @@
 
 .tuesday-section {
   color: vars.$neonred;
-  border: 10px solid vars.$neonred;
-  box-shadow: 0px 0px 6px 2px vars.$lightneonred;
+  border: 5px solid vars.$neonred;
+  box-shadow: 0px 0px 8px 2px vars.$lightneonred;
 
   hr {
     color: vars.$neonred;
@@ -177,8 +186,8 @@
 
 .wednesday-section {
   color: vars.$neonorange;
-  border: 10px solid vars.$neonorange;
-  box-shadow: 0px 0px 6px 2px vars.$lightneonorange;
+  border: 5px solid vars.$neonorange;
+  box-shadow: 0px 0px 8px 2px vars.$lightneonorange;
 
   hr {
     color: vars.$neonorange;
@@ -219,8 +228,8 @@
 
 .thursday-section {
   color: vars.$neonyellow;
-  border: 10px solid vars.$neonyellow;
-  box-shadow: 0px 0px 6px 2px vars.$lightneonyellow;
+  border: 5px solid vars.$neonyellow;
+  box-shadow: 0px 0px 8px 2px vars.$lightneonyellow;
 
   hr {
     color: vars.$neonyellow;
@@ -262,8 +271,8 @@
 
 .friday-section {
   color: vars.$neongreen;
-  border: 10px solid vars.$neongreen;
-  box-shadow: 0px 0px 6px 2px vars.$lightneongreen;
+  border: 5px solid vars.$neongreen;
+  box-shadow: 0px 0px 8px 2px vars.$lightneongreen;
 
   hr {
     color: vars.$neongreen;
@@ -304,8 +313,8 @@
 
 .saturday-section {
   color: vars.$neonblue;
-  border: 10px solid vars.$neonblue;
-  box-shadow: 0px 0px 6px 2px vars.$lightneonblue;
+  border: 5px solid vars.$neonblue;
+  box-shadow: 0px 0px 8px 2px vars.$lightneonblue;
 
   hr {
     color: vars.$neonblue;
@@ -346,8 +355,8 @@
 
 .sunday-section {
   color: vars.$neonpurple;
-  border: 10px solid vars.$neonpurple;
-  box-shadow: 0px 0px 6px 2px vars.$lightneonpurple;
+  border: 5px solid vars.$neonpurple;
+  box-shadow: 0px 0px 8px 2px vars.$lightneonpurple;
 
   hr {
     color: vars.$neonpurple;

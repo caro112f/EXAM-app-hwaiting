@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4f330a22.css",
+    "main.js": "/static/js/main.e812e4a5.js",
+    "static/js/787.8d5acafa.chunk.js": "/static/js/787.8d5acafa.chunk.js",
+    "static/media/splash_img.webp": "/static/media/splash_img.d73b4f635f2e0c9bae78.webp",
+    "static/media/koncert.webp": "/static/media/koncert.aef1f36f8eed9a3419bb.webp",
+    "static/media/food-truck.webp": "/static/media/food-truck.26b5e2fe4154c2a5780f.webp",
+    "static/media/boy-blue.webp": "/static/media/boy-blue.8c9ad077f7f35a6e2f74.webp",
+    "static/media/glow-sticks.webp": "/static/media/glow-sticks.60af8a2ce8933d7de6cb.webp",
+    "static/media/girl-pink.webp": "/static/media/girl-pink.7e31ca9097bad5292433.webp",
+    "static/media/sakura.svg": "/static/media/sakura.ec318f37db08a90c8770df625c835d43.svg",
+    "static/media/logo_light.svg": "/static/media/logo_light.64e89fefed2d83531b4f8dfe9e0f8912.svg",
+    "static/media/rainbow.svg": "/static/media/rainbow.546eed816be73320b085874759893a1e.svg",
+    "static/media/ig.svg": "/static/media/ig.9c2c1908a29f5bd242b4e173dc5d0b85.svg",
+    "static/media/vinyl.svg": "/static/media/vinyl.92060e21cd8be1f223b1dc0e4e8ec3a9.svg",
+    "static/media/yt.svg": "/static/media/yt.e8439383efa46ca1b9a373b6c572413e.svg",
+    "static/media/heart.svg": "/static/media/heart.bd08e22df75de292d8c985f8868052e0.svg",
+    "static/media/twitter.svg": "/static/media/twitter.bb3e0810b6a0e9b9e0450bb3813c96f1.svg",
+    "static/media/fb.svg": "/static/media/fb.511a254e16e856f74e726b6c883c5336.svg",
+    "index.html": "/index.html",
+    "static/media/unactive-fav.svg": "/static/media/unactive-fav.ac63934aab4d7a09af4bdd6df74face0.svg",
+    "static/media/active-fav.svg": "/static/media/active-fav.33600e1accb870ec70bdaa4d0185eca7.svg",
+    "static/media/faved.svg": "/static/media/faved.4ee3bb6cea5f0805fc185c34db255cce.svg",
+    "static/media/profile.svg": "/static/media/profile.a6868dd6ad33b871d3e777bb439ee084.svg",
+    "main.4f330a22.css.map": "/static/css/main.4f330a22.css.map",
+    "main.e812e4a5.js.map": "/static/js/main.e812e4a5.js.map",
+    "787.8d5acafa.chunk.js.map": "/static/js/787.8d5acafa.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4f330a22.css",
+    "static/js/main.e812e4a5.js"
+  ]
+}

@@ -26,14 +26,17 @@ export default function Program(props) {
           <h1>Program</h1>
           <img id="program-header-img" src={rainbowImg} alt="Rainbow"></img>
         </header>
+
         <ProgramNav cleanSchedule={cleanSchedule}></ProgramNav>
-        <MonProgram cleanSchedule={cleanSchedule}></MonProgram>
-        <TueProgram cleanSchedule={cleanSchedule}></TueProgram>
-        <WedProgram cleanSchedule={cleanSchedule}></WedProgram>
-        <ThuProgram cleanSchedule={cleanSchedule}></ThuProgram>
-        <FriProgram cleanSchedule={cleanSchedule}></FriProgram>
-        <SatProgram cleanSchedule={cleanSchedule}></SatProgram>
-        <SunProgram cleanSchedule={cleanSchedule}></SunProgram>
+        <section id="program-wrapper">
+          <MonProgram cleanSchedule={cleanSchedule}></MonProgram>
+          <TueProgram cleanSchedule={cleanSchedule}></TueProgram>
+          <WedProgram cleanSchedule={cleanSchedule}></WedProgram>
+          <ThuProgram cleanSchedule={cleanSchedule}></ThuProgram>
+          <FriProgram cleanSchedule={cleanSchedule}></FriProgram>
+          <SatProgram cleanSchedule={cleanSchedule}></SatProgram>
+          <SunProgram cleanSchedule={cleanSchedule}></SunProgram>
+        </section>
       </main>
       <Footer></Footer>
     </>

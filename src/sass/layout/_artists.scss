@@ -4,6 +4,11 @@
 #artists-main {
   overflow: hidden;
 }
+#artistlist-wrapper {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1300px) auto;
+  place-content: center;
+}
 
 //HEADER
 #artists-header {
@@ -25,6 +30,8 @@
 #filter-section {
   margin-block: 4rem 2rem;
   margin-inline: 1rem;
+  grid-column: 2/3;
+  grid-row: 1;
 
   @include mixins.bp-medium {
     margin-inline: 1rem;
@@ -45,12 +52,14 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  justify-content: center;
 }
 
 .genre-filter-button {
   margin-bottom: 1rem;
   padding: 0.8rem 1rem 0.8rem 1rem;
   border: 2px solid vars.$neonblue;
+  border-radius: 5px;
   width: 10rem;
   font-size: 1rem;
   background-color: transparent;
@@ -70,6 +79,7 @@
 
 #button-girlgroup {
   border: 2px solid vars.$neonred;
+  border-radius: 5px;
   &:hover {
     box-shadow: 0px 0px 6px 2px vars.$lightneonred;
   }
@@ -77,6 +87,7 @@
 
 #button-boygroup {
   border: 2px solid vars.$neonpurple;
+  border-radius: 5px;
   &:hover {
     box-shadow: 0px 0px 6px 2px vars.$lightneonpurple;
   }
@@ -84,7 +95,7 @@
 
 #button-soloist {
   border: 2px solid vars.$neonpink;
-
+  border-radius: 5px;
   &:hover {
     box-shadow: 0px 0px 6px 2px vars.$lightneonpink;
   }
@@ -92,6 +103,7 @@
 
 #button-coed {
   border: 2px solid vars.$neongreen;
+  border-radius: 5px;
   &:hover {
     box-shadow: 0px 0px 6px 2px vars.$lightneongreen;
   }
@@ -103,6 +115,8 @@
   gap: 1rem;
   margin-block: 1rem;
   flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 5px;
 }
 
 #day-filter {
@@ -115,6 +129,7 @@
   font-family: vars.$paragraphfont;
   font-size: 0.9rem;
   outline: 0;
+  border-radius: 5px;
 
   &:focus {
     //border: 2px solid vars.$neonblue;
@@ -130,6 +145,7 @@
   padding-inline: 1rem;
   outline: 0;
   min-height: 2.5rem;
+  border-radius: 5px;
 
   &:focus {
     //border: 2px solid vars.$neonblue;
@@ -145,6 +161,7 @@
   border: none;
   cursor: pointer;
   min-height: 2.5rem;
+  border-radius: 5px;
 
   &:hover {
     box-shadow: 0px 0px 6px 4px vars.$neonblue;
@@ -153,6 +170,8 @@
 
 //ARTIST LIST
 #Artistlist {
+  grid-column: 2/3;
+  grid-row: 2;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
